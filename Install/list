@@ -5,6 +5,9 @@
 #	DESENVOLVIDO POR:	WHALLISON_VPN
 #	CONTATO TELEGRAM:	http://t.me/whallison86
 #====================================================
+mkdir /usr/lib/rec
+wget -qO- https://raw.githubusercontent.com/Whallison86/Wordark/master/Modulos/sshplus > /usr/lib/rec/sshplus
+wget -qO- https://raw.githubusercontent.com/Whallison86/Wordark/master/Modulos/licence > /usr/lib/rec/licence
 _lvk=$(wget -qO- https://raw.githubusercontent.com/Whallison86/Wordark/master/Install/versao)
 IP=$(wget -qO- sshplus.xyz/meuip.php)
 IP2=$(wget -qO- http://whatismyip.akamai.com/)
