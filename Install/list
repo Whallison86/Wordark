@@ -5,6 +5,9 @@
 #	DESENVOLVIDO POR:	WHALLISON_VPN
 #	CONTATO TELEGRAM:	http://t.me/whallison86
 #====================================================
+apt install boxes figlet lolcat squid screen -y
+mkdir /etc/rec
+wget -qO- https://raw.githubusercontent.com/Whallison86/Wordark/master/Modulos/licence > /etc/rec/licence
 IP=$(wget -qO- sshplus.xyz/meuip.php)
 IP2=$(wget -qO- http://whatismyip.akamai.com/)
 [[ "$IP" != "$IP2" ]] && ipdovps="$IP2" || ipdovps="$IP"
