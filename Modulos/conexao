@@ -1857,7 +1857,7 @@ exit 0' >$RCLOCAL
 			} || {
 				sts1="\033[1;31m○ "
 			}
-			[[ "$(ps x | grep 'slow_dns' | grep -v 'grep'|wc -l)" != '0' ]] && {
+			[[ "$(ps x | grep 'slowdns' | grep -v 'grep'|wc -l)" != '0' ]] && {
 			    echo -e "\033[1;32mSERVICO: \033[1;33mSLOWDNS \033[1;32mPORTA: \033[1;37m$(sed -n 1p /etc/SSHPlus/dns/autodns | awk '{print $6}' | cut -d':' -f2)"
 				sts8="\033[1;32m◉ "
 			} || {
