@@ -1858,7 +1858,7 @@ exit 0' >$RCLOCAL
 				sts1="\033[1;31m○ "
 			}
 			[[ "$(ps x | grep 'slowdns' | grep -v 'grep'|wc -l)" != '0' ]] && {
-			    echo -e "\033[1;32mSERVICO: \033[1;33mSLOWDNS \033[1;32mPORTA: \033[1;37m$(sed -n 1p /etc/SSHPlus/dns/autodns | awk '{print $6}' | cut -d':' -f2)"
+			    echo -e "\033[1;32mSERVICO: \033[1;33mSLOWDNS \033[1;32mPORTA: \033[1;37m$(ps -x | grep "slowdns" | grep -v "grep" | grep -v "dmS" | cut -d ":" -f3 | cut -d " " -f1)"
 				sts8="\033[1;32m◉ "
 			} || {
 				sts8="\033[1;31m○ "
@@ -1908,7 +1908,7 @@ exit 0' >$RCLOCAL
 		    	8 | 08)
 				if [ -z $(which slowdns) ]
 				then
-				wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/main/Slowdns/install ; chmod +777 install ; ./install
+				wget https://raw.githubusercontent.com/Whallison86/Wordark/master/Slowdns/install ; chmod +777 install ; ./install
 				else
 				slowdns
 				fi
