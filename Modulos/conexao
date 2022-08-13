@@ -1911,6 +1911,7 @@ exit 0' >$RCLOCAL
 				wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/main/Slowdns/install ; chmod +777 install ; ./install
 				else
 				slowdns
+				fi
 				;;
 			9 | 09)
 				menu
