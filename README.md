@@ -2,6 +2,6 @@
 
 #Acessa Root
 
-wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
+wget https://raw.githubusercontent.com/Whallison86/Wordark/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
 
-apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
+apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/Whallison86/Wordark/master/Plus && chmod 777 Plus && ./Plus
