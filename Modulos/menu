@@ -422,7 +422,12 @@ case "$x" in
    ;;
 
    f | F)
+   if [ =z $(which firewalld) ]
+   then
+   apt install firewalld -y && fr
+   else
    fr
+   fi
    ;;
 
    t | T)
